@@ -1,0 +1,26 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "no text",
+  "main": "index.html",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parshencev/cashTimer.git"
+  },
+  "author": "Vlad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parshencev/cashTimer/issues"
+  },
+  "homepage": "https://github.com/parshencev/cashTimer#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-less": "^3.1.0",
+    "less-plugin-autoprefix": "^1.5.1"
+  }
+}
