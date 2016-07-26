@@ -6,14 +6,21 @@ var gulp            = require('gulp'),
     LessAutoprefix  = require('less-plugin-autoprefix'),
     autoprefix      = new LessAutoprefix({ browsers: ['last 2 versions'] });
     path        = {
+      img : "./src/img/*.png",
       less : "./src/less/*.less",
       html : "./src/*.html",
       css : "./src/css/*.css",
       css_min : "./build/css/",
       html_min : "./build/",
+      img_min : "./build/img/",
       server : "./build/",
       watch_build : "./build/**/*"
     };
+
+gulp.task('img', function() {
+  return gulp.src(path.img)
+    .pipe(gulp.dest(path.img_min));
+});
 
 gulp.task('less', function () {
   return gulp.src(path.less)
@@ -48,6 +55,6 @@ gulp.task('watch', function () {
   gulp.watch(path.html, ['html']);
 });
 
-gulp.task('default',['css','less','html','watch'], function() {
+gulp.task('default',['img','css','less','html','watch'], function() {
   gulp.run(['serve']);
 });
