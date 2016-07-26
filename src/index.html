@@ -11,7 +11,7 @@
       <nav class="container" id="nav">
         <a href="#" class="imgLink col-lg-4" id="link_1">
           <img src="img/basket_small.png" alt="basket">
-          <span class="underline">Как всегда получать баллы</span>
+          <span class="underline" onclick="document.getElementById('info').style.display='block';">Как всегда получать баллы</span>
         </a>
         <a href="#" class="imgLink col-lg-4" id="link_2">
           <img src="img/second.png" alt="card">
@@ -26,7 +26,7 @@
   <div class="info all" id="info">
     <div class="container">
       <div class="close col-lg-12">
-        <img src="img/exit-button.png" alt="exit">
+        <img src="img/exit-button.png" alt="exit" onclick="document.getElementById('info').style.display='none';">
       </div>
       <div class="block col-lg-4" id="basket">
         <img src="img/basket.png" alt="basket">
@@ -100,7 +100,21 @@
           </div>
         </div>
         <div class="col-lg-3" id="contentBlockEnd">
-          <img src="img/what.png" alt="what">
+          <img src="img/what.png" alt="what" onclick="if(document.getElementById('message').style.display!='block')document.getElementById('message').style.display='block'; else document.getElementById('message').style.display='none';">
+          <div class="message" id="message">
+            <span class="messageTitle">
+              Как всегда получать баллы за онлайн-покупки?
+            </span>
+            <p class="messageText">
+              Очистите свою корзину в интернет-магазине от отложенных товаров, если они есть, до перехода по нашей ссылке.
+            </p>
+            <p class="messageText">
+              Для выбора товаров и оформления заказов всегда переходите   с <a href="#" class="purple">malina.ru</a> и <a href="#" class="purple">online.malina.ru</a> или из рассылок Программы, указывая номер вашей карты МАЛИНА.
+            </p>
+            <p class="messageText">
+              Обратите внимание — при заказе через сервис МАЛИНА online баллы МАЛИНА не нужно искать в корзине при заказе (их там нет), баллы появятся на Персональной странице через положенное время.
+            </p>
+          </div>
           <div class="description">
             <span class="purple">
               100 баллов<br>

@@ -403,3 +403,45 @@ nav{
     }
   }
 }
+.message{
+  position: absolute;
+  background: #fff;
+  border: 1px solid #bdbdbd;
+  left: -385px;
+  top: 45px;
+  width: 407px;
+  height: 253px;
+  padding-top: 22px;
+  padding-left: 35px;
+  display:none;
+  .messageTitle{
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .messageText{
+    font-size: 12px;
+    width: 345px;
+    .purple{
+      font-weight:bold;
+    }
+  }
+  &:before{
+    position: absolute;
+    content: "";
+    border: 10px solid transparent;
+    border-left: 10px solid #bdbdbd;
+    border-top: 10px solid #bdbdbd;
+    right: -21px;
+    top: -1px;
+  }
+  &:after{
+    position: absolute;
+    content: "";
+    border: 10px solid transparent;
+    border-left: 10px solid #FFF;
+    border-top: 10px solid #FFF;
+    right: -19px;
+    top: 0px;
+  }
+}
